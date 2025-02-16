@@ -724,7 +724,7 @@ section,
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 5rem;
-  padding: 5rem 3.5rem;
+  padding: 5rem 2.5rem;
 }
 
 @media (max-width: 991px) {
@@ -814,7 +814,7 @@ section,
 
 .bg-image {
   background-repeat: no-repeat;
-  background-image: url("../../assets/img/banner-code.svg");
+  background-image: url("../../assets/img/banner-portf.svg");
   background-size: contain;
 }
 
