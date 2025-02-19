@@ -969,7 +969,7 @@ section,
 }
 
 .skills .skill-box .progress {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--accent-color));
   border-radius: 50px;
   height: 8px;
   margin-top: 5px;
@@ -982,7 +982,10 @@ section,
   position: relative;
   border-radius: 50px;
   transition: 0.9s;
-  width: 1px;
+}
+
+.progress-bar {
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
