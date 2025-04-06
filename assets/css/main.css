@@ -1,15 +1,3 @@
-/**
-* Template Name: EasyFolio
-* Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
-* Updated: Feb 11 2025 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -42,15 +30,15 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #faf9fb;
+  --background-color: #e2dfe4;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #dcbebe;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #ffffff;
   --contrast-color: #ffffff;
 }
 
@@ -83,7 +71,6 @@ h2 {
   color: #fff;
 }
 
-
 h1,
 h3,
 h4,
@@ -93,57 +80,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -177,7 +113,7 @@ h6 {
   margin: 0;
   padding-left: 5px;
   font-weight: 500;
-  color: var(--heading-color);
+  color: #3d03b8;
 }
 
 .header .header-social-links {
@@ -723,6 +659,7 @@ section,
 }
 
 .hero .content h2 {
+  /* Mantém tamanho flexível */
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -732,7 +669,11 @@ section,
 
 @media (max-width: 991px) {
   .hero .content h2 {
-    font-size: 2.5rem;
+    text-align: left;
+    max-width: 50%;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
   }
 }
 
@@ -824,7 +765,7 @@ section,
 @media (max-width: 991px) {
   .hero {
     text-align: center;
-    padding: 60px 0;
+    padding: 1rem;
   }
 
   .hero .cta-buttons {
@@ -954,7 +895,8 @@ section,
 --------------------------------------------------------------*/
 .skills .skill-box {
   background-color: var(--surface-color);
-  padding: 2rem;
+  padding-top: 0;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
