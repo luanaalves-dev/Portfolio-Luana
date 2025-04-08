@@ -603,8 +603,8 @@ section,
 .section-title h2 {
   font-size: 42px;
   font-weight: 700;
-  margin-top: 1rem;
-  margin-bottom: 5px;
+  margin-top: 5rem;
+  margin-bottom: 3px;
   background: linear-gradient(
     120deg,
     var(--heading-color),
@@ -662,6 +662,7 @@ section,
   /* Mantém tamanho flexível */
   font-size: 3.5rem;
   font-weight: 700;
+  max-width: 70%;
   line-height: 1.2;
   margin-bottom: 5rem;
   padding: 5rem 2.5rem;
@@ -670,8 +671,8 @@ section,
 @media (max-width: 991px) {
   .hero .content h2 {
     text-align: left;
-    max-width: 50%;
-    font-size: 1rem;
+    max-width: 48%;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
   }
@@ -757,9 +758,9 @@ section,
 }
 
 .bg-image {
-  background-repeat: no-repeat;
   background-image: url("../../assets/img/banner-portf.svg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 991px) {
@@ -810,9 +811,6 @@ section,
   position: relative;
 }
 
-.about .about-image img {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
 
 .about .about-content {
   padding-left: 2rem;
@@ -846,6 +844,7 @@ section,
 }
 
 .about .personal-info {
+  display: flex;
   margin-top: 2rem;
   padding: 2rem;
   background-color: rgb(213, 176, 240);
@@ -855,7 +854,7 @@ section,
 
 .about .personal-info .info-item {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   gap: 0.5rem;
 }
 
@@ -888,6 +887,11 @@ section,
   font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
+}
+
+@media (max-width:768px) {
+
+
 }
 
 /*--------------------------------------------------------------
