@@ -80,7 +80,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -579,7 +578,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -633,8 +632,9 @@ section,
 
 .section-title p {
   margin: 15px auto 0;
-  font-size: 16px;
-  max-width: 700px;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  max-width: 1000px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   line-height: 1.8;
 }
@@ -811,7 +811,6 @@ section,
   position: relative;
 }
 
-
 .about .about-content {
   padding-left: 2rem;
 }
@@ -843,6 +842,10 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
+.lead {
+  padding-bottom: 4rem;
+}
+
 .about .personal-info {
   display: flex;
   margin-top: 2rem;
@@ -854,7 +857,7 @@ section,
 
 .about .personal-info .info-item {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
@@ -889,9 +892,7 @@ section,
   margin: 0;
 }
 
-@media (max-width:768px) {
-
-
+@media (max-width: 768px) {
 }
 
 /*--------------------------------------------------------------
@@ -1238,8 +1239,6 @@ section,
     font-size: 14px;
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Services Section
