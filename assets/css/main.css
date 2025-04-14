@@ -671,10 +671,10 @@ section,
 @media (max-width: 991px) {
   .hero .content h2 {
     text-align: left;
-    max-width: 50%;
+    max-width: 48%;
     font-size: 1rem;
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 1.3rem;
   }
 }
 
