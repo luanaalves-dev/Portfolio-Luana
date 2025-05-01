@@ -578,7 +578,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 1em 0em 5em;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -595,14 +595,13 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 5px;
   position: relative;
 }
 
 .section-title h2 {
   font-size: 42px;
   font-weight: 700;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3px;
   background: linear-gradient(
     120deg,
@@ -659,7 +658,6 @@ section,
 }
 
 .hero .content h2 {
-  /* Mantém tamanho flexível */
   font-size: 3.5rem;
   font-weight: 700;
   max-width: 70%;
@@ -668,30 +666,49 @@ section,
   padding: 5rem 2.5rem;
 }
 
+
 @media (max-width: 991px) {
   .hero .content h2 {
     text-align: left;
-    max-width: 48%;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    padding: 1.3rem;
+    max-width: 50%; 
+    font-size: 1.2rem; 
+    padding: 1rem; 
+  }
+}
+
+  .hero .content .lead {
+    font-size: 1rem; 
+    line-height: 1.4; 
+    padding-top: 0.5rem; 
+    margin-bottom: 1rem; 
+  }
+  
+/* mobile */
+@media (max-width: 767px) {
+  .hero .content h2 {
+    font-size: 1.1rem;
+    padding: 0.rem;
+  }
+  
+  .hero .content .lead {
+    font-size: 0.9rem;
   }
 }
 
 .hero .content .lead {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 .hero .cta-buttons {
   display: flex;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .hero .cta-buttons {
     flex-direction: column;
   }
@@ -843,8 +860,10 @@ section,
 }
 
 .lead {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
+
+
 
 .about .personal-info {
   display: flex;
@@ -961,7 +980,8 @@ section,
 
 .resume .resume-wrapper .resume-block .lead {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
+  padding-top: 2rem;
 }
 
 .resume .resume-wrapper .timeline {
@@ -1789,6 +1809,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
