@@ -18,6 +18,7 @@
       : selectBody.classList.remove("scrolled");
   }
 
+  //  Banner animation, text writing effect
   document.addEventListener("scroll", toggleScrolled);
   window.addEventListener("load", toggleScrolled);
 
