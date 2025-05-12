@@ -132,6 +132,22 @@
   /**
    * Animate the skills items on reveal
    */
+
+  const skillsContainer = document.querySelector('.buttons-skills');
+const lis = skillsContainer.querySelectorAll('li');
+const links = skillsContainer.querySelectorAll('a');
+
+for (let i = 0; i < lis.length; i++) {
+  lis[i].addEventListener('click', function () {
+    for (let j = 0; j < lis.length; j++) {
+      lis[j].classList.remove('active');
+      links[j].classList.remove('active-text');
+    }
+    lis[i].classList.add('active');
+    links[i].classList.add('active-text');
+  });
+}
+
   let skillsAnimation = document.querySelectorAll(".skills-animation");
   skillsAnimation.forEach((item) => {
     new Waypoint({

@@ -1426,6 +1426,85 @@ section,
   color: var(--accent-color);
 }
 
+
+.buttons-skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+/* Cada item */
+.buttons-skills li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 95px;
+  background: #202020;
+  border-top: 1px solid #dcd5d5;
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  border-radius: 15px;
+}
+
+/* Link/ícone */
+.buttons-skills a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  transition: all 0.5s;
+}
+
+/* Hover do container (opcional) */
+.buttons-skills:hover {
+  cursor: pointer;
+}
+
+/* Ativo */
+li.active {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.buttons-skills a.active-text i {
+  color: #5e148b;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* RESPONSIVO */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .buttons-skills li {
+    height: 80px;
+    width: 80px;
+  }
+
+  .buttons-skills a {
+    font-size: 34px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .buttons-skills li {
+    height: 65px;
+    width: 65px;
+  }
+
+  .buttons-skills a {
+    font-size: 26px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
