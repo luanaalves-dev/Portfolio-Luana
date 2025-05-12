@@ -1445,7 +1445,7 @@ section,
   justify-content: center;
   height: 90px;
   width: 95px;
-  background: #202020;
+  background:  var(--accent-color);
   border-top: 1px solid #dcd5d5;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
@@ -1473,7 +1473,7 @@ li.active {
 }
 
 .buttons-skills a.active-text i {
-  color: #5e148b;
+  color: #570a87;
   transform: scale(1.2);
   transition: all 0.3s ease;
 }
