@@ -1447,7 +1447,7 @@ section,
   width: 95px;
   color: #fff;
   background:  var(--accent-color);
-  border-top: 1px solid #dcd5d5;
+  border-top: 1px solid #eae4e4;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
   border-radius: 15px;
