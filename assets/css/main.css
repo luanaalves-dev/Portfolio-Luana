@@ -1438,7 +1438,7 @@ section,
   gap: 10px;
 }
 
-/* Cada item */
+/* Each item */
 .buttons-skills li {
   display: flex;
   align-items: center;
@@ -1452,6 +1452,12 @@ section,
   border-radius: 15px;
 }
 
+.buttons-skills ul {
+  font-size: 50px; 
+  color: #fff;
+  transition: all 0.5s;
+}
+
 /* Link/ícone */
 .buttons-skills a {
   display: inline-block;
@@ -1459,6 +1465,13 @@ section,
   text-decoration: none;
   font-size: 40px;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .buttons-skills.devicon-nodejs a {
+    font-size: 20px;
+  }
+  
 }
 
 /* Hover do container (opcional) */
