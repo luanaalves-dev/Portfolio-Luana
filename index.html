@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Luana Alves</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description"
+    content="Portfolio website of Luana Alves, a web developer and designer creating modern, accessible, and responsive websites.">
+  <meta name="keywords" content="Web Developer, Portfolio, React, JavaScript, Frontend, Designer, Luana Alves, UI/UX">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -40,17 +42,15 @@
       class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Luana Alves</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about" class="#">About</a></li>
-          <li><a href="#projects" class="#">Projects</a></li>
-          <li><a href="#portfolio" class="#">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -112,7 +112,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/Lu_perfil.png" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="assets/img/Lu_perfil.png" alt="Profile Image" class="img-fluid rounded-4" loading="lazy">
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
@@ -120,14 +120,13 @@
               <span class="subtitle">Web Developer | Turning Ideas into Interactive Web Experiences </span>
               <p class="mb-4">{ Hello World! } I’m Luana!</p>
               <p class="lead mb-4">
-                I’m a Web Developer & Designer passionate about crafting visually stunning and
-                user-friendly digital experiences. With expertise in JavaScript, TypeScript, React, HTML, CSS and
-                Frameworks, I bring creative
-                designs to life through clean, responsive, and efficient code.
-
-                I thrive at the intersection of design and technology, ensuring that every interface is not only
-                beautiful but also intuitive and engaging. Constantly exploring new trends and innovations, I strive to
-                build modern, seamless, and high-performing web solutions.
+                I’m a Web Developer & Designer passionate about crafting visually stunning and user-friendly digital
+                experiences. With expertise in JavaScript, React, HTML, CSS, and various frameworks, I bring
+                creative designs to life through clean, responsive, and efficient code. On the Backend, I’m skilled in Node.js
+                C#, .NET, API development, and implementing CI/CD pipelines to ensure smooth and reliable deployments. I
+                thrive at the intersection of design and technology, ensuring that every interface is not only beautiful
+                but also intuitive and engaging. Constantly exploring new trends and innovations, I strive to build
+                modern, seamless, and high-performing web solutions.
               </p>
               <p class="mb-4"> Let’s build something amazing together!</p>
               <div class="personal-info">
@@ -185,12 +184,20 @@
                     aria-hidden="true"></i></a></li>
               <li><a><i class="devicon-css3-plain-wordmark" aria-hidden="true"></i></a></li>
               <li><a><i class="devicon-javascript-plain" aria-hidden="true"></i></a></li>
-              <li><a><i class="devicon-tailwindcss-plain-wordmark" style="font-size: 65px;" aria-hidden="true"></i></a></li>
-              <li><a><i class="devicon-bootstrap-plain-wordmark " aria-hidden="true"></i></a></li>
               <li><a><i class="devicon-react-original-wordmark " aria-hidden="true"></i></a></li>
-              <li><a> <i class="devicon-nodejs-plain-wordmark " style="font-size: 55px;" aria-hidden="true"></i></a></li>
+              <li><a><i class="devicon-tailwindcss-plain-wordmark" style="font-size: 65px;" aria-hidden="true"></i></a>
+              </li>
+              <li><a><i class="devicon-bootstrap-plain-wordmark " aria-hidden="true"></i></a></li>
+              <li><a> <i class="devicon-nodejs-plain-wordmark " style="font-size: 55px;" aria-hidden="true"></i></a>
+              </li>
+              <li><a><i class="devicon-csharp-plain" aria-hidden="true"></i></a></li>
+              <li><a><i class="devicon-dot-net-plain-wordmark " style="font-size: 55px;" aria-hidden="true"></i></a>
+              </li>
               <li><a><i class="devicon-github-original-wordmark" aria-hidden="true"></i></a></li>
               <li><a><i class="devicon-git-plain-wordmark " style="font-size: 55px;" aria-hidden="true"></i></a></li>
+              <li><a><i class="devicon-figma-plain" style="font-size: 55px;" aria-hidden="true"></i></a></li>
+              <li><a><i class="devicon-illustrator-line" style="font-size: 55px;" aria-hidden="true"></i></a></li>
+              <li><a><i class="devicon-photoshop-plain" style="font-size: 55px;" aria-hidden="true"></i></a></li>
             </ul>
           </div>
     </section><!-- /Skills Section -->
@@ -214,13 +221,15 @@
           <div class="col-12">
             <div class="resume-wrapper">
               <div class="resume-block" data-aos="fade-up">
-                <p class="lead">Results-driven Web Developer with expertise in front-end technologies including
-                  JavaScript, TypeScript, React, HTML, CSS, and Bootstrap. Passionate about crafting intuitive and
-                  responsive web applications, leveraging strong UI/UX design principles. Experienced in Git, GitHub,
-                  Node.js, and database fundamentals. Background in Digital Design, merging creativity with technical
-                  proficiency to enhance user engagement. Adept at SEO optimization, performance enhancement, and
-                  accessibility best practices. Seeking to contribute expertise in web development to innovative
-                  projects.
+                <p class="lead">I am a results-driven Web Developer with expertise in both frontend and backend
+                  technologies, including JavaScript, React, HTML, CSS, Node.js, C# and .Net. I’m passionate about
+                  crafting
+                  intuitive and responsive web applications that leverage strong UI/UX design principles. Experienced in
+                  Git, GitHub, Visual Studio code and database fundamentals, I bring a solid technical foundation to
+                  every
+                  project. With a background in Digital Design, I merge creativity with technical proficiency to enhance
+                  user engagement. I am also adept at SEO optimization, performance enhancement, and accessibility best
+                  practices. I’m eager to contribute my skills and expertise to innovative web development projects.
                 </p>
                 <div class="timeline">
                   <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -401,8 +410,6 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <div class="title-shape">
@@ -415,15 +422,23 @@
           From interactive front-end applications to API-driven solutions,
           my work prioritizes usability, performance, and modern technologies.
         </p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
           <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">Web Design</li>
+              <li>
+                <button type="button" class="filter-btn filter-active" data-filter="*">All Work</button>
+              </li>
+              <li>
+                <button type="button" class="filter-btn" data-filter=".filter-web">Web
+                  Development</button>
+              </li>
+              <li>
+                <!-- <button type="button" data-filter=".filter-graphics" class="filter-btn">Graphics</button> -->
+                <button type="button" class="filter-btn" data-filter=".filter-graphics">Graphics</button>
+              </li>
             </ul>
           </div>
 
@@ -431,7 +446,8 @@
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="assets/img/mouckup.png" class="img-fluid " alt="" loading="lazy">
+                  <img src="assets/img/mouckup.png" class="img-fluid" alt="Mockup of Laois Leisure Blog project"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="assets/img/mouckup.png" class="glightbox preview-link"
@@ -448,7 +464,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/BMI.png" class="img-fluid" alt="" loading="lazy">
@@ -468,7 +484,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/Password.png" class="img-fluid" alt="" loading="lazy">
@@ -488,7 +504,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/Feedback.png" class="img-fluid" alt="" loading="lazy">
@@ -528,7 +544,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/Code-Quest.png" class="img-fluid" alt="" loading="lazy">
@@ -549,8 +565,142 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
-        </div>
+
+            <!-- Start graphics items -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio-1.png" class="img-fluid" alt="Mockup of Laois Leisure Blog project"
+                    loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio-1.png" class="glightbox preview-link"
+                        data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <!-- <a href="" target="_blank" class="details-link"><i
+                                                class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Website Banners</span>
+                  <p>This banner was designed for Laois Leisure Center using Adobe Photoshop and
+                    Illustrator. The goal was to deliver a high-quality visual that reflects the
+                    center’s commitment to health, fitness, and community. The design incorporates
+                    elements that represent its core services, gym facilities, fitness classes, and
+                    swimming lessons, while staying aligned with the brand’s values ​​and visual
+                    identity.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio-7.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio-7.png" class="glightbox preview-link"
+                        data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Tri-Fold Brochure</span>
+                  <p>This tri-fold brochure was designed for Laois Leisure Centre using Canva and
+                    Illustrator. The goal was to create a visually engaging and informative piece that
+                    reflects the centre’s dedication to health, fitness, and wellbeing.The design
+                    highlights core services, such as children’s swimming lessons and a parent's guide.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio-12.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio-12.png" class="glightbox preview-link"
+                        data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">ROI With High-Converting Ads!</span>
+                  <p>I design eye-catching posters using Illustrator & Photoshop, creating results-driven ads tailored
+                    for Facebook & Instagram.Grab attention, drive clicks, and maximize the investment with visuals
+                    that convert!
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio-13.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio-13.png" class="glightbox preview-link"
+                        data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">ROI With High-Converting Ads!</span>
+                  <p>I design eye-catching posters using Illustrator & Photoshop, creating results-driven ads tailored
+                    for Facebook & Instagram.Grab attention, drive clicks, and maximize the investment with visuals
+                    that convert!
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio-15.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio-15.png" class="glightbox preview-link"
+                        data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Smartphone Mockup</span>
+                  <p>I design sleek and realistic smartphone mockups using Photoshop, perfect for showcasing your apps,
+                    websites, or designs with a professional touch.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/potfolio-logo.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/potfolio-logo.png" class="glightbox preview-link"
+                        data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Logo Redesign</span>
+                  <p>I create high-quality logo redesigns using Illustrator, crafting fresh concept designs that
+                    preserve your brand’s identity and elevate its visual impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End graphics items -->
+
+          </div>
+        </div><!-- End Portfolio Container -->
+      </div>
       </div>
     </section><!-- /Portfolio Section -->
 

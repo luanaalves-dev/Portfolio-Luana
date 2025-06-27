@@ -1146,6 +1146,7 @@ section,
   color: var(--contrast-color);
 }
 
+
 .portfolio .portfolio-card {
   background-color: var(--surface-color);
   border-radius: 15px;
