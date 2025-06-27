@@ -660,8 +660,13 @@ section,
 }
 
 @keyframes blinkCursor {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #000; }
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -682,16 +687,14 @@ section,
   padding: 7rem 2.5rem;
 }
 
-
-
- @media (max-width: 480px) {
+@media (max-width: 480px) {
   .hero .content h2 {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     padding: 1rem;
     text-align: left;
     max-width: 48%;
   }
-} 
+}
 
 .hero .content .lead {
   font-size: 1.5rem;
@@ -700,20 +703,18 @@ section,
   padding-top: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
-  
+
 /* mobile */
 @media (max-width: 767px) {
   .hero .content h2 {
     font-size: 1.1rem;
-    padding: 0.rem;
-
+    padding: 0rem;
   }
-  
+
   .hero .content .lead {
     padding-top: 0rem;
   }
 }
-
 
 .hero .cta-buttons {
   display: flex;
@@ -875,8 +876,6 @@ section,
 .lead {
   padding-bottom: 2rem;
 }
-
-
 
 .about .personal-info {
   display: flex;
@@ -1124,7 +1123,7 @@ section,
   list-style: none;
 }
 
-.portfolio .portfolio-filters li {
+/* .portfolio .portfolio-filters li {
   font-size: 15px;
   font-weight: 500;
   padding: 8px 20px;
@@ -1145,7 +1144,37 @@ section,
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
+ */
 
+.portfolio .portfolio-filters li {
+  padding: 0; /* removemos padding do li e movemos para o botão */
+}
+
+.portfolio .portfolio-filters .filter-btn {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  /* background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
+  color: var(--default-color);
+  border: none; */
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  color: var(--accent-color);
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters .filter-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+.portfolio .portfolio-filters .filter-btn.filter-active {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
 
 .portfolio .portfolio-card {
   background-color: var(--surface-color);
@@ -1178,6 +1207,7 @@ section,
 .portfolio .portfolio-card .portfolio-image img {
   object-fit: cover;
   width: 100%;
+  overflow: hidden;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -1427,7 +1457,6 @@ section,
   color: var(--accent-color);
 }
 
-
 .buttons-skills ul {
   list-style: none;
   display: flex;
@@ -1447,7 +1476,7 @@ section,
   height: 90px;
   width: 95px;
   color: #fff;
-  background:  var(--accent-color);
+  background: var(--accent-color);
   border-top: 1px solid #eae4e4;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
@@ -1455,7 +1484,7 @@ section,
 }
 
 .buttons-skills ul {
-  font-size: 50px; 
+  font-size: 50px;
   color: #fff;
   transition: all 0.5s;
 }
@@ -1473,7 +1502,6 @@ section,
   .buttons-skills.devicon-nodejs a {
     font-size: 20px;
   }
-  
 }
 
 /* Hover do container (opcional) */
@@ -1518,7 +1546,6 @@ li.active {
     font-size: 26px;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Contact Section

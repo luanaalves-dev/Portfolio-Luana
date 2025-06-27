@@ -22,7 +22,7 @@
   document.addEventListener("scroll", toggleScrolled);
   window.addEventListener("load", toggleScrolled);
 
-  const words = ["Design","Development", "Creativity"];
+  const words = ["Design", "Development", "Creativity"];
   let wordIndex = 0;
   let charIndex = 0;
   const typeElement = document.querySelector(".typewriter");
@@ -133,20 +133,20 @@
    * Animate the skills items on reveal
    */
 
-  const skillsContainer = document.querySelector('.buttons-skills');
-const lis = skillsContainer.querySelectorAll('li');
-const links = skillsContainer.querySelectorAll('a');
+  const skillsContainer = document.querySelector(".buttons-skills");
+  const lis = skillsContainer.querySelectorAll("li");
+  const links = skillsContainer.querySelectorAll("a");
 
-for (let i = 0; i < lis.length; i++) {
-  lis[i].addEventListener('click', function () {
-    for (let j = 0; j < lis.length; j++) {
-      lis[j].classList.remove('active');
-      links[j].classList.remove('active-text');
-    }
-    lis[i].classList.add('active');
-    links[i].classList.add('active-text');
-  });
-}
+  for (let i = 0; i < lis.length; i++) {
+    lis[i].addEventListener("click", function () {
+      for (let j = 0; j < lis.length; j++) {
+        lis[j].classList.remove("active");
+        links[j].classList.remove("active-text");
+      }
+      lis[i].classList.add("active");
+      links[i].classList.add("active-text");
+    });
+  }
 
   let skillsAnimation = document.querySelectorAll(".skills-animation");
   skillsAnimation.forEach((item) => {
@@ -191,7 +191,7 @@ for (let i = 0; i < lis.length; i++) {
     });
 
     isotopeItem
-      .querySelectorAll(".isotope-filters li")
+      .querySelectorAll(".isotope-filters li button")
       .forEach(function (filters) {
         filters.addEventListener(
           "click",
