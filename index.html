@@ -122,7 +122,8 @@
               <p class="lead mb-4">
                 I’m a Web Developer & Designer passionate about crafting visually stunning and user-friendly digital
                 experiences. With expertise in JavaScript, React, HTML, CSS, and various frameworks, I bring
-                creative designs to life through clean, responsive, and efficient code. On the Backend, I’m skilled in Node.js
+                creative designs to life through clean, responsive, and efficient code. On the Backend, I’m skilled in
+                Node.js
                 C#, .NET, API development, and implementing CI/CD pipelines to ensure smooth and reliable deployments. I
                 thrive at the intersection of design and technology, ensuring that every interface is not only beautiful
                 but also intuitive and engaging. Constantly exploring new trends and innovations, I strive to build
@@ -697,34 +698,89 @@
               </div>
             </div>
             <!-- End graphics items -->
-
           </div>
         </div><!-- End Portfolio Container -->
       </div>
       </div>
     </section><!-- /Portfolio Section -->
 
+
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <div class="title-shape mb-5">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+              stroke-width="2"></path>
+          </svg>
+        </div>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-5">
           <div class="col-lg-6">
             <div class="content" data-aos="fade-up" data-aos-delay="200">
-              <div class="section-category mb-3">Contact</div>
-              <div class="contact-info mt-5">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope-at me-3"></i>
-                  <span>luana.fsalves@gmail.com</span>
+              <div class="section-category mb-3">Get in Touch</div>
+              <p class="mb-4">Whether you're looking for a creative mind to bring fresh perspective to your
+                tech team or just want to explore the possibility of working together.
+                Drop me a message using the form or reach out directly via email, I’m always open to new ideas,
+                exciting collaborations, or meaningful conversations.</p>
+
+                <div class="contact-info mt-5">
+                  <div class="info-item d-flex mb-3">
+                    <i class="bi bi-envelope-at me-3"></i>
+                    <span>luana.fsalves@gmail.com</span>
+                  </div>
+
+                  <div class="info-item d-flex mb-4">
+                    <i class="bi bi-geo-alt me-3"></i>
+                    <span>Portlaoise, Co.Laois</span>
+                  </div>
                 </div>
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-geo-alt me-3"></i>
-                  <span>Portlaoise, Co.Laois</span>
-                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row gy-4">
+
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+
+                    <div class="col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                        required=""></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                    </div>
+
+                  </div>
+                </form>
+
               </div>
             </div>
           </div>
+
         </div>
+
       </div>
+
     </section><!-- /Contact Section -->
   </main>
 
