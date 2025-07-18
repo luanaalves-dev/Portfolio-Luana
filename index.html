@@ -224,9 +224,11 @@
               <div class="resume-block" data-aos="fade-up">
                 <p class="lead">I am a results-driven Web Developer with expertise in both frontend and backend
                   technologies, including JavaScript, React, HTML, CSS, Node.js, C# and .Net. I’m passionate about
-                  crafting intuitive and responsive web applications that leverage strong UI/UX design principles. Experienced in
+                  crafting intuitive and responsive web applications that leverage strong UI/UX design principles.
+                  Experienced in
                   Git, GitHub, Visual Studio code and database fundamentals, I bring a solid technical foundation to
-                  every project. With a background in Digital Design, I merge creativity with technical proficiency to enhance
+                  every project. With a background in Digital Design, I merge creativity with technical proficiency to
+                  enhance
                   user engagement. I am also adept at SEO optimization, performance enhancement, and accessibility best
                   practices. I’m eager to contribute my skills and expertise to innovative web development projects.
                 </p>
@@ -240,7 +242,8 @@
                     <div class="timeline-right">
                       <h3 class="position">Laois Leisure Website Project</h3>
                       <ul>
-                        <li>Created a responsive company website using HTML5, SCSS, CSS3 & Bootstrap, focused on boosting
+                        <li>Created a responsive company website using HTML5, SCSS, CSS3 & Bootstrap, focused on
+                          boosting
                           engagement and attracting new members with clean, mobile-friendly layouts.</li>
                         <li>Designed & implemented a fully responsive layout ensuring cross-device compatibility.</li>
                         <li>Optimized site performance, SEO, and accessibility to enhance visibility and user
@@ -711,7 +714,7 @@
         </div>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-5">
+        <div class="row g-5 align-items-start">
           <div class="col-lg-6">
             <div class="content" data-aos="fade-up" data-aos-delay="200">
               <div class="section-category mb-3">Get in Touch</div>
@@ -720,32 +723,30 @@
                 Drop me a message using the form or reach out directly via email, I’m always open to new ideas,
                 exciting collaborations, or meaningful conversations.</p>
 
-                <div class="contact-info mt-5">
-                  <div class="info-item d-flex mb-3">
-                    <i class="bi bi-envelope-at me-3"></i>
-                    <span>luana.fsalves@gmail.com</span>
-                  </div>
-
-                  <div class="info-item d-flex mb-4">
-                    <i class="bi bi-geo-alt me-3"></i>
-                    <span>Portlaoise, Co.Laois</span>
-                  </div>
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>luana.fsalves@gmail.com</span>
                 </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span>Portlaoise, Co.Laois</span>
+                </div>
+              </div>
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
               <div class="card-body p-4 p-lg-5">
-
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form id="contactForm" class="js-email-form">
                   <div class="row gy-4">
 
                     <div class="col-12">
                       <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                     </div>
 
-                    <div class="col-12 ">
+                    <div class="col-12">
                       <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                     </div>
 
@@ -759,9 +760,13 @@
                     </div>
 
                     <div class="col-12 text-center">
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                      <div class="loading-message" id="loadingMessage">
+                        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        Sending your message...
+                      </div>
+                      <div class="error-message" id="errorMessage"></div>
+                      <div class="sent-message" id="sentMessage">Your message has been sent. Thank you!</div>
+                      <button type="submit" class="btn btn-submit w-100" id="submitButton">Sending</button>
                     </div>
 
                   </div>
@@ -797,7 +802,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -805,7 +809,19 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+
+  <!-- AOS JS and EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    //AOS.init();
+
+
+  </script>
   <!-- Main JS File -->
+   <script src="assets/js/email.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
