@@ -689,10 +689,10 @@ section,
 
 @media (max-width: 480px) {
   .hero .content h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
-    text-align: left;
-    max-width: 48%;
+    max-width: 50%;
   }
 }
 
@@ -714,6 +714,7 @@ section,
   .hero .content .lead {
     padding-top: 0rem;
   }
+  
 }
 
 .hero .cta-buttons {
@@ -874,7 +875,7 @@ section,
 }
 
 .lead {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .about .personal-info {
