@@ -707,7 +707,7 @@ section,
 /* mobile */
 @media (max-width: 767px) {
   .hero .content h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem;
   }
 
@@ -731,6 +731,7 @@ section,
 
 .hero .cta-buttons .btn {
   padding: 0.8rem 2rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 50px;
@@ -1495,13 +1496,13 @@ section,
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  font-size: 40px;
+  text-align: center;
   transition: all 0.5s;
 }
 
 @media screen and (max-width: 600px) {
   .buttons-skills.devicon-nodejs a {
-    font-size: 20px;
+    font-size: 50px;
   }
 }
 
