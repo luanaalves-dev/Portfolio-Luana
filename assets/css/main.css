@@ -599,10 +599,10 @@ section,
 }
 
 .section-title h2 {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 3px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   background: linear-gradient(
     120deg,
     var(--heading-color),
@@ -646,6 +646,7 @@ section,
   .section-title .subtitle-wrapper .subtitle {
     font-size: 13px;
   }
+
 }
 
 /* animation h2 */
@@ -994,8 +995,11 @@ section,
 
 .resume .resume-wrapper .resume-block .lead {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
-  margin-bottom: 0rem;
-  padding-top: 2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-left: 7rem;
+
 }
 
 .resume .resume-wrapper .timeline {
@@ -1105,6 +1109,13 @@ section,
   .resume .resume-wrapper .timeline .timeline-item .timeline-right {
     width: 100%;
     padding-left: 2.5rem;
+  }
+
+  .resume .resume-wrapper .resume-block .lead {
+    padding-left: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1578,24 +1589,7 @@ li.active {
   font-size: 1.4rem;
 }
 
-/* .contact .contact-info .map-link {
-  color: var(--heading-color);
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-} */
 
-/* .contact .contact-info .map-link i {
-  transition: transform 0.3s ease;
-}
-
-.contact .contact-info .map-link:hover {
-  color: var(--accent-color);
-}
-
-.contact .contact-info .map-link:hover i {
-  transform: translateX(5px);
-} */
 
 .contact .contact-form {
   background-color: var(--surface-color);
