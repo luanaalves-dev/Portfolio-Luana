@@ -646,7 +646,6 @@ section,
   .section-title .subtitle-wrapper .subtitle {
     font-size: 13px;
   }
-
 }
 
 /* animation h2 */
@@ -715,7 +714,6 @@ section,
   .hero .content .lead {
     padding-top: 0rem;
   }
-  
 }
 
 .hero .cta-buttons {
@@ -932,7 +930,7 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .skill-box {
+/* .skills .skill-box {
   background-color: var(--surface-color);
   padding-top: 0;
   padding: 1rem;
@@ -970,7 +968,8 @@ section,
 
 .progress-bar {
   width: 100%;
-}
+} */
+/* skill -box animation */
 
 /*--------------------------------------------------------------
 # Resume Section
@@ -999,7 +998,6 @@ section,
   margin-bottom: 3rem;
   padding-top: 1rem;
   padding-left: 7rem;
-
 }
 
 .resume .resume-wrapper .timeline {
@@ -1135,29 +1133,6 @@ section,
   margin: 0;
   list-style: none;
 }
-
-/* .portfolio .portfolio-filters li {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 8px 20px;
-  cursor: pointer;
-  border-radius: 30px;
-  background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
-  color: var(--default-color);
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-filters li:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
-  transform: translateY(-2px);
-}
-
-.portfolio .portfolio-filters li.filter-active {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
- */
 
 .portfolio .portfolio-filters li {
   padding: 0; /* removemos padding do li e movemos para o botão */
@@ -1470,69 +1445,58 @@ section,
   color: var(--accent-color);
 }
 
+/* Skill buttons sections */
+
+/* Container for all buttons */
 .buttons-skills ul {
-  list-style: none;
   display: flex;
-  flex-wrap: wrap; /* permite quebrar linha */
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 15px; /* Controls the space between buttons */
   padding: 0;
-  margin: 0;
-  gap: 10px;
+  list-style: none;
 }
 
-/* Each item */
-.buttons-skills li {
+/* Individual Skill Button */
+.buttons-skills ul li {
+  width: 90px;  /* Fixed width */
+  height: 90px; /* Fixed height */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
-  width: 95px;
-  color: #fff;
-  background: var(--accent-color);
-  border-top: 1px solid #b0abb6;
-  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
-  transition: all 0.5s;
-  border-radius: 15px;
-}
-
-.buttons-skills ul {
-  font-size: 50px;
-  color: #fff;
-  transition: all 0.5s;
-}
-
-/* Link/ícone */
-.buttons-skills a {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  transition: all 0.5s;
-}
-
-@media screen and (max-width: 600px) {
-  .buttons-skills.devicon-nodejs a {
-    font-size: 50px;
-  }
-}
-
-/* Hover do container (opcional) */
-.buttons-skills:hover {
-  cursor: pointer;
-}
-
-/* Ativo */
-li.active {
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.buttons-skills a.active-text i {
-  color: #570a87;
-  transform: scale(1.2);
+  background: #5a189a; /* Your purple color */
+  border-radius: 12px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 !important; /* Removes default spacing gaps */
 }
+.buttons-skills ul li i.devicon-tailwindcss-plain-wordmark {
+  font-size: 65px !important; /* Slightly smaller to fit the width of the box */
+  transform: scaleX(1.1);     /* Subtle horizontal stretch to improve readability */
+}
+
+/* Standardization for the icons inside */
+.buttons-skills ul li i {
+  font-size: 45px !important; /* Forces all icons to same size */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Active/Hover State */
+.buttons-skills ul li.active, 
+.buttons-skills ul li:hover {
+  background: white;
+  transform: translateY(-5px);
+}
+
+.buttons-skills ul li.active i,
+.buttons-skills ul li:hover i {
+  color: #5a189a;
+}
+
+/* Skill buttons sections end */
 
 /* RESPONSIVO */
 
@@ -1589,8 +1553,6 @@ li.active {
   font-size: 1.4rem;
 }
 
-
-
 .contact .contact-form {
   background-color: var(--surface-color);
   border: none;
@@ -1641,46 +1603,44 @@ li.active {
 }
 
 .error-message {
-            display: none;
-            color: #dc3545;
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .sent-message {
-            display: none;
-            color: #155724;
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .loading-message {
-            display: none;
-            color: #0c5460;
-            background-color: #d1ecf1;
-            border: 1px solid #bee5eb;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        
-        .btn-submit:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-        
-        /* Spinner para loading */
-        .spinner-border-sm {
-            width: 1rem;
-            height: 1rem;
-            border-width: 0.125em;
-        }
+  display: none;
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
 
+.sent-message {
+  display: none;
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
 
+.loading-message {
+  display: none;
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Spinner para loading */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.125em;
+}
