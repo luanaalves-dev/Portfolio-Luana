@@ -27,7 +27,7 @@
   const typeElement = document.querySelector(".typewriter");
   
   if (typeElement) {
-    const words = ["Design", "Development", "Creativity"];
+    const words = ["Design", "Solutions","Clean Code","Modern Web"];
     let wordIndex = 0;
     let charIndex = 0;
 
